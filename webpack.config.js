@@ -20,11 +20,11 @@ module.exports = {
         extensions: ['.ts', '.js']
     },
 
-    entry: helpers.root('index.ts'),
+    entry: helpers.root('dist/index.js'),
 
     output: {
-        path: helpers.root('bundles'),
-        publicPath: '/',
+        path: helpers.root('dist/bundles'),
+        publicPath: './dist',
         filename: 'ngx-cookie.umd.js',
         library: 'ngx-cookie',
         libraryTarget: 'umd'

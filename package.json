@@ -3,7 +3,7 @@
   "version": "0.0.0-development",
   "description": "Implementation of Angular 1.x $cookies service to Angular",
   "scripts": {
-    "clean": "rimraf bundles coverage src/**/*.d.ts src/**/*.metadata.json src/**/*.js tests/**/*.d.ts tests/**/*.metadata.json tests/**/*.js index.d.ts index.metadata.json index.js",
+    "clean": "rimraf dist bundles coverage src/**/*.d.ts src/**/*.metadata.json src/**/*.js tests/**/*.d.ts tests/**/*.metadata.json tests/**/*.js index.d.ts index.metadata.json index.js",
     "clean-build": "npm run clean && npm run build && npm test && npm run prepublish",
     "test": "karma start",
     "test-watch": "karma start --singleRun=false --autoWatch=true",
@@ -39,9 +39,9 @@
   "bugs": {
     "url": "https://github.com/salemdar/ngx-cookie/issues"
   },
-  "main": "bundles/ngx-cookie.umd.js",
-  "module": "index.js",
-  "typings": "index.d.ts",
+  "main": "dist/bundles/ngx-cookie.umd.js",
+  "module": "dist/index.js",
+  "typings": "dist/index.d.ts",
   "peerDependencies": {
     "@angular/core": ">=2.0.0 || >=5.0.0-rc.0"
   },

@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "outDir": "dist",
     "noImplicitAny": true,
     "module": "es2015",
     "target": "es5",
@@ -19,12 +20,12 @@
     "index.ts",
     "./src/cookie.service.ts",
     "./src/cookie-backend.service.ts",
-    "./src/cookie-options.model.ts",
-    "tests/cookie.service.spec.ts"
+    "./src/cookie-options.model.ts"
   ],
   "exclude": [
     "node_modules",
-    "bundles"
+    "bundles",
+    "tests"
   ],
   "angularCompilerOptions": {
     "strictMetadataEmit": true,
