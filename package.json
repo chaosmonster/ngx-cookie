@@ -8,6 +8,7 @@
     "test": "karma start",
     "test-watch": "karma start --singleRun=false --autoWatch=true",
     "prepublish": "ngc && npm run build",
+    "prepare": "npm run prepublish",
     "build": "webpack",
     "commit": "npm run prepublish && npm test && git-cz",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
